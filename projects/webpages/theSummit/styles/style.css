@@ -1,10 +1,10 @@
-body{
+body {
 background-color: #ffffff;
 margin: 0px;
 padding:0px;
 }
 
-.navigation{
+.navigation {
 box-sizing: border-box;
 background-color: #ffffff;
 border-bottom: 1px solid #dddddd;
@@ -18,12 +18,12 @@ width: 100%;
 z-index: 999;
 }
 
-ul{
+ul {
 margin: 0px;
 padding: 0px;
 }
 
-.navigation a{
+.navigation a {
 color: #736B92;
 display: inline-block;
 font-family: 'Raleway', sans-serif;
@@ -34,7 +34,7 @@ padding: 10px 40px;
 text-transform: uppercase;
 }
 
-a.logo{
+a.logo {
 color: #2176FF;
 font-family: 'Amatic SC',sans-serif;
 font-size: 34px;
@@ -43,7 +43,7 @@ text-align: center;
 text-transform: uppercase;
 }
 
-.banner{
+.banner {
 background-image: url("https://images.unsplash.com/photo-1418290232843-5d7a0bd93f7d?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb");
 background-position: center top;
 background-size: cover;
@@ -55,12 +55,12 @@ top: 100px;
 width: 100%;
 }
 
-.banner-text{
+.banner-text {
 position: relative;
 top: 200px;
 }
 
-h1{
+h1 {
 color: #ffffff;
 font-family: 'Raleway',sans-serif;
 font-size: 60px;
@@ -71,7 +71,7 @@ text-align: center;
 text-transform: uppercase;
 }
 
-h2{
+h2 {
 color: #2176FF;
 font-family: 'Amatic SC',sans-serif;
 font-size: 30px;
@@ -80,12 +80,12 @@ text-align: center;
 text-transform: uppercase;
 }
 
-.banner h2{
+.banner h2 {
 font-size: 120px;
 margin: -40px 0px 80px 0px;
 }
 
-.content{
+.content {
 background-image: url('https://content.codecademy.com/courses/learn-links-and-buttons/project/mountain1.jpg');
 background-position: center top;
 background-size: cover;
@@ -97,7 +97,7 @@ position: relative;
 text-align: center;
 }
 
-p{
+p {
 color: #000000;
 font-family: 'Raleway',sans-serif;
 font-size: 18px;
@@ -105,12 +105,12 @@ line-height: 42px;
 text-align: left;
 }
 
-.description{
+.description {
 display: inline-block;
 width: 70%;
 }
 
-.activities-panel{
+.activities-panel {
 margin-bottom: 40px;
 padding: 80px 0px;
 text-align: center;
@@ -124,7 +124,7 @@ justify-content: center;
 width: 100%;
 }
 
-.activity{
+.activity {
 background-color: #2176FF;
 box-sizing: border-box;
 width: 240px;
@@ -140,13 +140,13 @@ text-transform: uppercase;
 margin: 5px;
 }
 
-.footer{
+.footer {
 background-color: #2176FF;
 padding: 30px;
 text-align: center;
 }
 
-.footer h2{
+.footer h2 {
 color: #ffffff;
 font-family: 'Raleway',sans-serif;
 font-size: 14px;
