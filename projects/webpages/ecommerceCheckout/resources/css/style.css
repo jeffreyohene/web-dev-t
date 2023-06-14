@@ -4,7 +4,6 @@
 3. Structure Styles
 4. Module Styles
 5. Component Styles
-6. Page Styles
 ======================================== */
 
 /* 1. Global Styles
@@ -151,6 +150,7 @@ font-weight: 700;
 }
 
 small {
+font-family: 'Roboto', Helvetica, sans-serif;
 font-size: 12px;
 line-height: 1.25;
 }
@@ -168,6 +168,7 @@ border: none;
 border-bottom: 1px solid #F2F3F5;
 clear: both;
 width: 100%;
+margin: 20px;
 }
 
 @media(min-width: 720px) {
@@ -226,8 +227,8 @@ margin-left: auto;
 
 .site-nav-left li:not(:first-child),
 .site-nav-right li {
+display: none;
 font-weight: 700;
-display: inline-block;
 line-height: 0;
 }
 
@@ -235,10 +236,22 @@ line-height: 0;
 display: inline-block;
 }
 
+@media(min-width: 768px) {
+.site-nav-left li:not(:first-child),
+.site-nav-right li {
+    display: inline-block;
+}
+
+.site-nav-mobile,
+.site-nav-mobile li {
+    display: none;
+}
+}
+
 .site-nav-left li:not(:last-child),
 .site-nav-right li:not(:last-child),
 .site-nav-mobile li:not(:last-child) {
-margin-right: 45px;
+margin-right: 5px;
 }
 
 .site-nav-left .logo {
@@ -246,13 +259,12 @@ width: 120px;
 }
 
 .site-nav-link {
-color: #FFFFFF;
+color: #ffff;
 text-decoration: none;
 }
 
-.site-nav-link-active {
-color: #FF6600;
-text-decoration: none;
+.site-nav-link.active {
+color: #FFAA00;
 }
 
 /* Site Footer */
@@ -428,7 +440,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-border: 1px solid #42A5F5;
+border: 1px solid #FC472E;
 outline: none;
 }
 
@@ -437,25 +449,36 @@ height: 100px;
 }
 
 .input-error {
-border-color: #FC472E;
+border-color: #F2F3F5;
+}
+
+.radio-item {
+margin-bottom: 15px;
+}
+
+.radio-item input {
+    box-shadow: none;
+    display: inline-block;
+    margin-bottom: 0px;
 }
 
 /* 6. Page Styles
 ======================================== */
+
 .site-main {
-padding: 60px 15px;
+padding: 60px 60px;
 position: relative;
 }
 
 .site-main-background {
 background-color: #34474F;
-height: 600px;
-display: block;
-position: absolute;
-top: 0;
 bottom: 0;
+display: block;
+height: 600px;
 left: 0;
+position: absolute;
 right: 0;
+top: 0;
 z-index: -1;
 }
 
@@ -465,7 +488,7 @@ margin-bottom: 60px;
 
 .site-main-header h1,
 .site-main-header p {
-color: #FFFFFF;
+color: #ffff;
 }
 
 .section-header {
@@ -474,7 +497,28 @@ line-height: 33px;
 margin-bottom: 15px;
 }
 
-.location-details li {
+.order-item {
 display: block;
-margin-top: 15px;
+margin-top: 50px;
+}
+
+.item-price {
+text-align: right;
+}
+
+.order-charge li {
+display: block;
+}
+
+.help-box {
+background-color: #FFAA00;
+border-radius: 3px;
+clear: both;
+display: block;
+margin-top: 30px;
+padding: 15px;
+}
+
+.help-box p {
+margin-bottom: 0
 }
